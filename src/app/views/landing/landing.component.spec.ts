@@ -2,6 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { LandingComponent } from './landing.component';
 import {LandingRoutingModule} from './landing-routing.module';
+import {MatToolbarModule} from '@angular/material';
 
 describe('LandingComponent', () => {
   let component: LandingComponent;
@@ -11,6 +12,7 @@ describe('LandingComponent', () => {
     TestBed.configureTestingModule({
       declarations: [ LandingComponent ],
       imports: [
+        MatToolbarModule,
         LandingRoutingModule
       ]
     })
