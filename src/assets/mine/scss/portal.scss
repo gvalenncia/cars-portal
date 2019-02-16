@@ -1,0 +1,27 @@
+/* ----------------------------------------------- */
+/* BASIC SETUP */
+/* ----------------------------------------------- */
+
+//primary color
+$deep-purple: #673AB7;
+
+//ligth primary color
+$light-purple: #D1C4E9;
+
+//second color
+$purple: #9C27B0;
+
+//third color
+$withe: #FFFFFF;
+
+//warn color
+$deep-orange: #FF5722;
+
+/* ----------------------------------------------- */
+/* REUSABLE COMPONENTS */
+/* ----------------------------------------------- */
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
