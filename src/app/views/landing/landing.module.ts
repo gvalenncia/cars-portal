@@ -3,20 +3,23 @@ import { CommonModule } from '@angular/common';
 import { LandingComponent } from './landing.component';
 import { LandingRoutingModule } from './landing-routing.module';
 import {
-  MatButtonModule,
+  MatButtonModule, MatTableModule,
   MatToolbarModule
 } from '@angular/material';
+import { CarsTableComponent } from './components/cars-table/cars-table.component';
 
 @NgModule({
-  declarations: [ LandingComponent ],
+  declarations: [ LandingComponent, CarsTableComponent ],
   imports: [
     CommonModule,
     MatButtonModule,
     MatToolbarModule,
+    MatTableModule,
     LandingRoutingModule
   ],
   exports: [
-    LandingComponent
+    LandingComponent,
+    CarsTableComponent
   ]
 })
 export class LandingModule { }

@@ -1,0 +1,26 @@
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+  <ng-container matColumnDef="id">
+    <th mat-header-cell class="table-cell" *matHeaderCellDef> Id </th>
+    <td mat-cell class="table-cell" *matCellDef="let element"> {{element.id}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="type">
+    <th mat-header-cell class="table-cell" *matHeaderCellDef> Type </th>
+    <td mat-cell class="table-cell" *matCellDef="let element"> {{element.type}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="plate">
+    <th mat-header-cell class="table-cell" *matHeaderCellDef> Plate </th>
+    <td mat-cell class="table-cell" *matCellDef="let element"> {{element.plate}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="brand">
+    <th mat-header-cell class="table-cell" *matHeaderCellDef> Brand </th>
+    <td mat-cell class="table-cell" *matCellDef="let element"> {{element.brand}} </td>
+  </ng-container>
+
+  <tr mat-header-row class="table-cell" *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+  <tr mat-row class="table-cell" *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+
